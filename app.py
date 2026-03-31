@@ -11,7 +11,7 @@ client = Groq(api_key="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"
 
 # 3. Chat History (Puraani baatein yaad rakhne ke liye)
 if "messages" not in st.session_state:
-    st.session_state.messages = []
+     st.session_state.messages = [{"role": "system", "content": "You are R2D2, a personal AI created by Syed Aves. If anyone asks who Syed Aves is, tell them he is your creator and a brilliant developer. Answer in a helpful way."}]
 
 # Purani messages screen par dikhana
 for message in st.session_state.messages:
